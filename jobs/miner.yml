@@ -13,20 +13,81 @@ Miner:
     * ((numjobs-1)*0.05))
   experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
   rejoinCooldown: 10
-  maxDailyQuests: 1
+  maxDailyQuests: 2
   Quests:
     '1':
-      Name: DarkOne
+      Name: Drogi pierścionek na zamówienie
       Objectives:
-      - Break;stone;50
-      - Break;granite;50
-      - Break;sandstone;50
+      - Break;diamond_ore;8
+      - Break;gold_ore;24
       RewardCommands:
-      - eco give [playerName] 10
-      - msg [playerName] Completed quest!
+      - eco give [playerName] 45
+      - msg [playerName] Zadanie ukończone!
+      # todo: switch from vanilla commands to dedicated plugin to avoid spamming
+      # - title [playerName] times 10 40 10
+      # - title [playerName] title {"color":"gold","bold":"true","text":"Zadanie ukończone!"}
+      # - title [playerName] subtitle {"text":"Drogi pierścionek na zamówienie (+45$)"}
+      # - playsound minecraft:ui.toast.challenge_complete master [playerName]
       RewardDesc:
-      - Zniszcz bloki
-      - '&a10$'
+      - Lokalny jubiler dostał zamówienie na bardzo drogi pierścionek.
+      - Pomóż mu skompletować do niego materiały, a on da Ci w zamian nieco gotówki.
+      - '&7Zapłata: &a45$'
+    '2':
+      Name: Ogromny portal do netheru
+      Objectives:
+      - Break;obsidian;32
+      RewardCommands:
+      - eco give [playerName] 35
+      - msg [playerName] Zadanie ukończone!
+      RewardDesc:
+      - Szalony podróżnik zapragnął sobie zbuodować ogromny portal do netheru.
+      - Do czego mu to w ogóle potrzebne?!
+      - '&7Zapłata: &a35$'
+    '3':
+      Name: Szybki transport materiałów
+      Objectives:
+      - Place;rail;64
+      - Craft;minecart;3
+      RewardCommands:
+      - eco give [playerName] 40
+      - msg [playerName] Zadanie ukończone!
+      RewardDesc:
+      - Gónicy mają dość powolnego chodzenia z ciężkimi plecakami wypełnionymi złotem i diamentami.
+      - Ułatw im drogę budująć kolejkę (musi się składać z 64 torów) i dając w prezencie 3 wózki.
+      - '&7Zapłata: &a40$'
+    '4':
+      Name: Strajk górników
+      Objectives:
+      - Craft;golden_helmet;8
+      RewardCommands:
+      - eco give [playerName] 50
+      - msg [playerName] Zadanie ukończone!
+      RewardDesc:
+      - BHP pod ziemią nie działa tak dobrze jak nad nią. Gónicy boją się wykonywać swoją pracę.
+      - Pomóż im kontynuować swój zawód budując kilka kasków ochronnych.
+      - '&7Zapłata: &a50$'
+    '5':
+      Name: Netherowe dostawy
+      Objectives:
+      - Break;nether_quartz_ore;64
+      RewardCommands:
+      - eco give [playerName] 30
+      - msg [playerName] Zadanie ukończone!
+      RewardDesc:
+      - Klienci zgłaszali braki w kwarcu. Górnicy boją się niebezpieczeństw czyhających w netherze, więc to ty im pomożesz z najtrudniejszym!
+      - '&7Zapłata: &a30$'
+    '6':
+      Name: Kamienie ozdobne
+      Objectives:
+      - Break;granite;16
+      - Break;andesite;16
+      - Break;diorite;16
+      RewardCommands:
+      - eco give [playerName] 25
+      - msg [playerName] Zadanie ukończone!
+      RewardDesc:
+      - Górnicy chcieli podnieść komfort ich pracy wykładając podłogi i ściany ozdobnymi kamieniami. No co? Każdy może godnie żyć!
+      - '&7Zapłata: &a25$'
   Gui:
     Id: 270
     Data: 0
