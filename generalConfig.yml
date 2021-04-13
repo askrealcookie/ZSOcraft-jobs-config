@@ -42,7 +42,7 @@ Optimizations:
   NewVersion: true
   DecimalPlaces:
     # Decimal places to be shown
-    Money: 2
+    Money: 4
     Exp: 2
     Points: 2
   DBCleaning:
@@ -192,9 +192,9 @@ Economy:
   # If you are getting paid 10 for placing wood, then same value of 50 for money income, will result in you getting 15 bucks
   # This only effects base income value
   GeneralMulti:
-    MONEY: 0.0
-    EXP: 0.0
-    POINTS: 0.0
+    MONEY: -99.0
+    EXP: -9.0
+    POINTS: -9.0
   # When set to true income which is belove 0 will get bonus applied to it
   # In example, if you would loose 5 bucks for placing diamond block, with 100% payment bonus, that penalty disappears
   # When this left at false penalty for action will remain unchanged
@@ -465,7 +465,7 @@ Sounds:
 # Extra firework shooting in some events
 Fireworks:
   LevelUp:
-    use: true
+    use: false
     # Makes the firework to randomize, such as random colors, type, power and so on.
     # These are under settings will not be work, when this enabled.
     Random: true

@@ -32,104 +32,97 @@ Miner:
     Data: 0
   TNTBreak:
     stone:
-      income: 0.0025
+      income: 0.25
       points: 0.25
       experience: 0.5
     granite:
-      income: 0.0025
+      income: 0.25
       points: 0.25
       experience: 0.5
     diorite:
-      income: 0.0025
+      income: 0.25
       points: 0.25
       experience: 0.5
     andesite:
-      income: 0.0025
+      income: 0.25
       points: 0.25
       experience: 0.5
   Break:
     andesite:
-      income: 0.01
+      income: 1
       points: 1
       experience: 1
     stone:
-      income: 0.01
+      income: 1
       points: 1
       experience: 1
     granite:
-      income: 0.01
+      income: 1
       points: 1
       experience: 1
     diorite:
-      income: 0.01
+      income: 1
       points: 1
       experience: 1
-    sandstone:
-      income: 0.0015
-      points: 0.15
-      experience: 0.2
-    chiseled_sandstone:
-      income: 0.0015
-      points: 0.15
-      experience: 0.2
-    cut_sandstone:
-      income: 0.0015
-      points: 0.15
-      experience: 0.2
     coal_ore:
-      income: 0.03
+      income: 3
       points: 2
       experience: 2
     redstone_ore:
-      income: 0.025
+      income: 2.5
       points: 2
       experience: 2
     iron_ore:
-      income: 0.035
+      income: 3.5
       points: 3
       experience: 2
     gold_ore:
-      income: 0.05
+      income: 5
       points: 4
       experience: 2
     lapis_ore:
-      income: 0.075
+      income: 7.5
       points: 6
       experience: 2
     diamond_ore:
-      income: 0.1
+      income: 10
       points: 10
       experience: 10
     emerald_ore:
-      income: 0.15
+      income: 15
       points: 15
       experience: 30
     nether_quartz_ore:
-      income: 0.025
+      income: 2.5
       points: 2.5
       experience: 2.5
     obsidian:
-      income: 0.05
+      income: 5
       points: 5
       experience: 5
     netherrack:
-      income: 0.0005
+      income: 0.1
       points: 0.1
       experience: 0.1
   Place:
     iron_ore:
-      income: -0.035
-      points: -5
-      experience: -5.0
+      income: -3.5
+      points: -3
+      experience: -2
     gold_ore:
-      income: -0.05
-      points: -6
-      experience: -6.0
+      income: -5
+      points: -4
+      experience: -2
     diamond_ore:
-      income: -0.1
+      income: -10.0
       points: -10
       experience: -10.0
     emerald_ore:
-      income: -0.15
+      income: -15
       points: -15
       experience: -30
+  Kill:
+    Player:
+      income: 7.5
+      points: 7.5
+      experience: 7.5
