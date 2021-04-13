@@ -74,12 +74,14 @@ Optimizations:
   DisabledWorlds:
     # By setting this to true, Jobs plugin will be disabled in given worlds
     # Only commands can be performed from disabled worlds with jobs.disabledworld.commands permission node
-    Use: false
+    Use: true
     # If true, will changes the list behavior, so if a world is added to list
     # the payments will only works in the given worlds.
-    UseAsWhiteList: false
+    UseAsWhiteList: true
     List:
-    - world
+    - survival
+    - world_nether
+    - world_the_end
   Explore:
     # By setting this to true when there is max amount of players explored a chunk then it will be marked as fully explored and exact players who explored it will not be saved to save some memory
     Compact: true
@@ -101,7 +103,7 @@ DailyQuests:
   # Defines time in 24hour format when we want to give out new daily quests
   # Any daily quests given before reset will be invalid and new ones will be given out
   ResetTime:
-    Hour: 4
+    Hour: 8
     Minute: 0
   # Defines amount of skips player can do on a quest
   # This allows player to abandon current quest and get new one
@@ -120,11 +122,11 @@ JobExpirationTime: 0
 # Maximum number of jobs a player can join.
 # Use 0 for no maximum
 # Keep in mind that jobs.max.[amount] will bypass this setting
-max-jobs: 3
+max-jobs: 1
 # Disabling the payment if the user reached the maximum level of a job.
 disable-payment-if-max-level-reached: false
 # Hide jobs from player if they lack the permission to join the job
-hide-jobs-without-permission: false
+hide-jobs-without-permission: true
 # Hide jobs info from player if they lack the permission to join the job
 hide-jobsinfo-without-permission: false
 # Option to allow payment to be made when killing mobs from a spawner.
@@ -250,7 +252,7 @@ Economy:
     # With this enabled, players will be limited how much they can make in defined time
     # Time in seconds: 60 = 1 min, 3600 = 1 hour, 86400 = 24 hours
     Money:
-      Use: false
+      Use: true
       # Do you want to stop money gain when exp limit reached?
       StopWithExp: false
       # Do you want to stop money gain when point limit reached?
@@ -264,7 +266,7 @@ Economy:
       TimeLimit: 3600
       # Delay between announcements about reached money limit
       # Keep this from 30 to 5 min (300), as players can get annoyed of constant message displaying
-      AnnouncementDelay: 30
+      AnnouncementDelay: 300
     # Point gain limit
     # With this enabled, players will be limited how much they can make in defined time
     Point:
@@ -306,7 +308,7 @@ Economy:
     # Do you want to give money for only renaming items in anvil?
     # Players will get full pay as they would for remaining two items when they only rename one
     # This is not a big issue, but if you want to disable it, you can
-    PayForRenaming: true
+    PayForRenaming: false
   Enchant:
     # Do you want to give money for enchanting items in anvil?
     PayForEnchantingOnAnvil: false
@@ -317,7 +319,7 @@ Economy:
     # By default its false, as you can make ALOT of money if prices kept from old payment mechanics
     PayForEachCraft: false
     # true - if players tries to combine (repair) 2 same items, like armor or weapon do they get income for it?
-    PayForCombiningItems: true
+    PayForCombiningItems: false
   VTrade:
     # With this true, player will get money for all trade items instead of each trade action
     payForEachTradeItem: false
@@ -365,11 +367,11 @@ ExploitProtections:
       timer: 3
     # Enable silk touch protection.
     # With this enabled players wont get paid for broken blocks from restrictedblocks list with silk touch tool.
-    SilkTouchProtection: false
+    SilkTouchProtection: true
     MonsterDamage:
       # This section controls how much damage player should do to monster for player to get paid
       # This prevents from killing monsters in one hit when they suffer in example fall damage
-      Use: false
+      Use: true
       Percentage: 60
   # McMMO abilities
   McMMO:
@@ -463,7 +465,7 @@ Sounds:
 # Extra firework shooting in some events
 Fireworks:
   LevelUp:
-    use: false
+    use: true
     # Makes the firework to randomize, such as random colors, type, power and so on.
     # These are under settings will not be work, when this enabled.
     Random: true
@@ -534,7 +536,7 @@ JobsGUI:
     Material: GREEN_STAINED_GLASS_PANE
 Commands:
   # Do you want to filter the hidden player names from tab-complete?
-  FilterHiddenPlayersInTabComplete: false
+  FilterHiddenPlayersInTabComplete: true
   PageRow:
     JobsTop:
       # Defines amount of players to be shown in one page for /jobs top & /jobs gtop
