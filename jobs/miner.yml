@@ -2,7 +2,7 @@ Miner:
   fullname: Miner
   shortname: M
   FullDescription:
-  - "Earns money mining minerals and ores."
+  - "Zarabia pieniądze z kopania kamieni i rud."
   ChatColour: DARK_GRAY
   chat-display: full
   max-level: 200
@@ -22,11 +22,11 @@ Miner:
       - Break;granite;50
       - Break;sandstone;50
       RewardCommands:
-      - eco give [playerName] 100
+      - eco give [playerName] 10
       - msg [playerName] Completed quest!
       RewardDesc:
-      - Break blocks and get money
-      - Get 100 for this!
+      - Zniszcz bloki
+      - '&a10$'
   Gui:
     Id: 270
     Data: 0
@@ -121,8 +121,3 @@ Miner:
       income: -15
       points: -15
       experience: -30
-  Kill:
-    Player:
-      income: 7.5
-      points: 7.5
-      experience: 7.5

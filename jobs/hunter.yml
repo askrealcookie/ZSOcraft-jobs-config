@@ -2,7 +2,7 @@ Hunter:
   fullname: Hunter
   shortname: H
   FullDescription:
-  - "Earns money killing animals and monsters."
+  - "Zarabia pieniądze z zabijania zwierząt."
   ChatColour: RED
   chat-display: full
   max-level: 200
@@ -22,11 +22,11 @@ Hunter:
       - Kill;Creeper;3
       - Kill;Skeleton;10
       RewardCommands:
-      - eco give [playerName] 100
+      - eco give [playerName] 15
       - msg [playerName] Completed quest!
       RewardDesc:
-      - Kill everything what moves and get money
-      - Get 100 for this!
+      - Zabij wszystko co sie rusza
+      - '&a15$'
   Gui:
     Id: 261
     Data: 0
@@ -148,11 +148,3 @@ Hunter:
       income: 50.0
       points: 50
       experience: 120.0
-    ENDER_DRAGON:
-      income: 2000.0
-      points: 2000
-      experience: 2000.0
-    Player:
-      income: 9.0
-      points: 9
-      experience: 7.5

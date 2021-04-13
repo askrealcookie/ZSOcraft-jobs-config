@@ -2,7 +2,7 @@ Farmer:
   fullname: Farmer
   shortname: Fa
   FullDescription:
-  - "Earns money farming crops."
+  - "Zarabia pieniądze z rolnictwa."
   ChatColour: BLUE
   chat-display: full
   max-level: 200
@@ -22,11 +22,11 @@ Farmer:
       - Shear;White;10
       - Milk;Cow;3
       RewardCommands:
-      - eco give [playerName] 100
+      - eco give [playerName] 10
       - msg [playerName] Completed quest!
       RewardDesc:
-      - Be a farmer and get money
-      - Get 100 for this!
+      - Pofarmuj sobie
+      - '&a10$'
   Gui:
     Item: wooden_hoe
   Tame:
@@ -323,8 +323,3 @@ Farmer:
       income: 1
       points: 1
       experience: 1
-  Kill:
-    Player:
-      income: 7.5
-      points: 7.5
-      experience: 7.5

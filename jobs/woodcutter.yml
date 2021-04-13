@@ -2,7 +2,7 @@ Woodcutter:
   fullname: Woodcutter
   shortname: W
   FullDescription:
-  - "Earns money felling and planting trees"
+  - "Zarabia pieniądze z wycinania drzew."
   ChatColour: GREEN
   chat-display: full
   max-level: 200
@@ -22,11 +22,11 @@ Woodcutter:
       - Break;birch_log;50
       - Break;jungle_log;50
       RewardCommands:
-      - eco give [playerName] 100
+      - eco give [playerName] 15
       - msg [playerName] Completed quest!
       RewardDesc:
-      - Break logs and get money
-      - Get 100 for this!
+      - Zniszcz różne rodzaje drewna
+      - '&a15$'
   Gui:
     Id: 17
     Data: 2
@@ -44,13 +44,3 @@ Woodcutter:
     - stripped_jungle_log;0.75;0.75;0.25
     - stripped_acacia_log;0.75;0.75;0.25
     - stripped_dark_oak_log;0.75;0.75;0.25
-  Kill:
-    Player:
-      income: 7.5
-      points: 7.5
-      experience: 7.5
-  custom-kill:
-    Woodcutter:
-      income: 10.0
-      points: 10.0
-      experience: 10.0

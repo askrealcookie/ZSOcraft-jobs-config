@@ -2,7 +2,7 @@ Fisherman:
   fullname: Fisherman
   shortname: Fi
   FullDescription:
-  - "Earns money from fishing."
+  - "Zarabia pieniądze z łowienia ryb."
   ChatColour: AQUA
   chat-display: full
   max-level: 200
@@ -22,11 +22,11 @@ Fisherman:
       - Fish;salmon;2
       - Fish;tropical_fish;2
       RewardCommands:
-      - eco give [playerName] 100
+      - eco give [playerName] 15
       - msg [playerName] Completed quest!
       RewardDesc:
-      - Catch fish and get money
-      - Get 100 for this!
+      - Złap rybki!
+      - '&a15$'
   Gui:
     Item: fishing_rod
   Fish:
@@ -46,8 +46,3 @@ Fisherman:
       income: 25.0
       points: 25.0
       experience: 25.0
-  Kill:
-    Player:
-      income: 7.5
-      points: 7.5
-      experience: 7.5
