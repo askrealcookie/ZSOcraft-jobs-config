@@ -40,20 +40,20 @@ Miner:
       - eco give [playerName] 35
       - msg [playerName] Zadanie ukończone!
       RewardDesc:
-      - Szalony podróżnik zapragnął sobie zbuodować ogromny portal do netheru.
+      - Szalony podróżnik zapragnął sobie zbudować ogromny portal do netheru.
       - Do czego mu to w ogóle potrzebne?!
       - '&7Zapłata: &a35$'
     '3':
       Name: Szybki transport materiałów
       Objectives:
-      - Place;rail;64
+      - Place;rail;32
       - Craft;minecart;3
       RewardCommands:
       - eco give [playerName] 40
       - msg [playerName] Zadanie ukończone!
       RewardDesc:
-      - Gónicy mają dość powolnego chodzenia z ciężkimi plecakami wypełnionymi złotem i diamentami.
-      - Ułatw im drogę budująć kolejkę (musi się składać z 64 torów) i dając w prezencie 3 wózki.
+      - Górnicy mają dość powolnego chodzenia z ciężkimi plecakami wypełnionymi złotem i diamentami.
+      - Ułatw im drogę budując kolejkę (musi się składać z 32 torów) i dając w prezencie 3 wózki.
       - '&7Zapłata: &a40$'
     '4':
       Name: Strajk górników
@@ -63,8 +63,8 @@ Miner:
       - eco give [playerName] 50
       - msg [playerName] Zadanie ukończone!
       RewardDesc:
-      - BHP pod ziemią nie działa tak dobrze jak nad nią. Gónicy boją się wykonywać swoją pracę.
-      - Pomóż im kontynuować swój zawód budując kilka kasków ochronnych.
+      - BHP pod ziemią nie działa tak dobrze jak nad nią. Górnicy boją się wykonywać swoją pracę.
+      - Pomóż im kontynuować swój zawód tworząc kilka kasków ochronnych.
       - '&7Zapłata: &a50$'
     '5':
       Name: Netherowe dostawy
